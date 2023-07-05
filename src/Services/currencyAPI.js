@@ -1,7 +1,7 @@
 import axios from "axios";
 
-const API_KEY = "fa4448f2edmsh50cd49b13d3791dp15dd1ajsn60f1c9033090";
-const API_HOST = "currency-converter18.p.rapidapi.com";
+const API_KEY = import.meta.env.VITE_RAPID_API_KEY;
+const API_HOST = import.meta.env.VITE_RAPID_API_HOST;
 
 export const fetchSupportedCurrencies = async () => {
     try {
