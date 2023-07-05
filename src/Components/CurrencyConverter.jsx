@@ -130,7 +130,7 @@ const CurrencyConverter = () => {
             <Box sx={{ display: "flex", justifyContent: "end", mt: 5 }}>
                 <Card sx={{ width: "100%", maxWidth: 345 }}>
                     <CardContent>
-                        <Typography>{moment().format('DD MMMM YYYY, h:mm:ss a')}</Typography>
+                        <Typography>{moment().format('DD MMMM YYYY, h:mm a')}</Typography>
                         {
                             convertedAmount && (
                                 <Box sx={{ mt: 3 }}>
@@ -145,7 +145,14 @@ const CurrencyConverter = () => {
                         }
                     </CardContent>
                     <CardActions>
-                        <Button variant='contained' onClick={handleReset} size="small">Reset</Button>
+                        <Button
+                            size="small"
+                            disabled={convertedAmount === null}
+                            variant='contained'
+                            onClick={handleReset}
+                        >
+                            Reset
+                        </Button>
                     </CardActions>
                 </Card>
             </Box>
