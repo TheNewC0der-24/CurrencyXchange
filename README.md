@@ -23,7 +23,7 @@ currencies.
 
 ## Link
 ```
-https://ai-genie.netlify.app/
+https://x-changecurrency.netlify.app/
 ```
 
 ## Author
